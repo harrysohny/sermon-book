@@ -35,3 +35,46 @@
   display:block;
 
 }
+.editor-note{
+
+  margin-top:48px;
+
+  padding:28px 30px;
+
+  background:#f5f0e5;
+
+  border-top:3px solid #6b7557;
+
+  border-radius:12px;
+
+}
+
+.editor-note-title{
+
+  margin:0 0 22px;
+
+  font-size:1.25em;
+
+  font-weight:700;
+
+  color:#4d5943;
+
+}
+
+.editor-note p{
+
+  margin:0 0 18px;
+
+}
+
+.editor-note .editor-signature{
+
+  margin-top:25px;
+
+  text-align:right;
+
+  font-weight:600;
+
+  color:#666;
+
+}
