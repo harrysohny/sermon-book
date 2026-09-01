@@ -78,3 +78,96 @@
   color:#666;
 
 }
+.intro-block{
+
+  margin:0 0 34px;
+
+  padding:26px 28px;
+
+  background:#fbf8f1;
+
+  border:1px solid #e4dccd;
+
+  border-radius:16px;
+
+}
+
+.intro-block h3{
+
+  margin:0 0 20px;
+
+  font-size:1.35em;
+
+  color:#465640;
+
+}
+
+.author-photo{
+
+  display:block;
+
+  width:min(240px,70%);
+
+  height:auto;
+
+  margin:10px auto 24px;
+
+  border-radius:12px;
+
+}
+
+.intro-kicker{
+
+  font-weight:700;
+
+  color:#53634a;
+
+}
+
+.intro-block blockquote{
+
+  margin:18px 0 26px;
+
+  padding:18px 22px;
+
+  border-left:3px solid #718267;
+
+  background:#f3eee3;
+
+  line-height:1.8;
+
+}
+
+.congrats-card{
+
+  margin-top:22px;
+
+  padding-top:22px;
+
+  border-top:1px solid #ddd3c3;
+
+}
+
+.congrats-card h4{
+
+  margin:0 0 6px;
+
+  font-size:1.13em;
+
+}
+
+.byline{
+
+  margin:0 0 16px;
+
+  font-size:.92em;
+
+  color:#777;
+
+}
+
+.publication p{
+
+  margin:8px 0;
+
+}
