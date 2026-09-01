@@ -1,0 +1,15 @@
+{
+  "name": "시냇가에 심은 나무 - 손상기 목사 설교집",
+  "short_name": "설교집",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#faf7f0",
+  "theme_color": "#faf7f0",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
