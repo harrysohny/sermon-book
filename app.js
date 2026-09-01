@@ -77,3 +77,106 @@ let P=null,S=[],cur=null,favs=JSON.parse(localStorage.getItem('favs')||'[]'),fs=
   };
 
 })();
+;(()=>{
+
+  const previousOpen = open;
+
+  open = function(n){
+
+    previousOpen(n);
+
+    if(Number(n) !== 102) return;
+
+    const area = document.getElementById('body');
+
+    if(!area || area.querySelector('.editor-note')) return;
+
+    const marker = '설교집 편집 및 블로깅을 마치며';
+
+    const paragraphs = [...area.querySelectorAll('p')];
+
+    const first = paragraphs.find(p => p.textContent.includes(marker));
+
+    if(!first) return;
+
+    const fullText = first.textContent;
+
+    const pos = fullText.indexOf(marker);
+
+    // 같은 문단에 붙어 있는 설교의 마지막 부분은 그대로 남김
+
+    const sermonEnd = fullText.slice(0, pos).trim();
+
+    // 편집자 글 시작 부분
+
+    let noteStart = fullText.slice(pos + marker.length);
+
+    noteStart = noteStart.replace(/^[.…·\s\-]+/, '').trim();
+
+    const note = document.createElement('section');
+
+    note.className = 'editor-note';
+
+    const heading = document.createElement('h3');
+
+    heading.className = 'editor-note-title';
+
+    heading.textContent = '설교집 편집 및 블로깅을 마치며';
+
+    note.appendChild(heading);
+
+    if(noteStart){
+
+      const p = document.createElement('p');
+
+      p.textContent = noteStart;
+
+      note.appendChild(p);
+
+    }
+
+    // 해당 문단 뒤의 나머지 편집자 글을 모두 박스 안으로 이동
+
+    let move = false;
+
+    paragraphs.forEach(p => {
+
+      if(p === first){
+
+        move = true;
+
+        return;
+
+      }
+
+      if(move){
+
+        if(p.textContent.includes('아들, 블로그 편집자')){
+
+          p.classList.add('editor-signature');
+
+        }
+
+        note.appendChild(p);
+
+      }
+
+    });
+
+    // 원래 문단에는 설교 마지막 문장만 남김
+
+    if(sermonEnd){
+
+      first.textContent = sermonEnd;
+
+      first.insertAdjacentElement('afterend', note);
+
+    }else{
+
+      first.replaceWith(note);
+
+    }
+
+  };
+
+})();
