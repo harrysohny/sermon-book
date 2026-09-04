@@ -1,33 +1,24 @@
-시냇가에 심은 나무 — TTS 통합 최종본
+시냇가에 심은 나무 — 디지털 아카이브 완성형
 
-교체 파일
-- index.html   → 저장소 루트
-- style.css    → 저장소 루트
-- app.js       → 저장소 루트
+업로드 위치
+- index.html → 저장소 루트
+- style.css → 저장소 루트
+- app.js → 저장소 루트
 - sermons.json → data/sermons.json
+- images/site-qr.png → images/site-qr.png
 
-TTS 기능
-- ▶ 처음부터 듣기
-- ⏸ 일시정지 / ▶ 계속
-- ■ 정지
-- 0.8x / 1.0x / 1.2x / 1.4x 속도
-- 기기 내장 한국어 음성 자동 선택
-- 문단 단위 순차 낭독
-- 현재 읽는 문단 하이라이트
-- 설교를 바꾸면 기존 낭독 자동 정지
-- '※ 편집자 주:' 제외
-- '※ 편집자 후기:' 및 .editor-note 제외
-- 속도 설정 기억
+추가 기능
+- 오늘의 한 문장
+- 최근 읽은 설교 3편
+- 읽은 설교 ✓ 표시
+- 설교 공유 / 주소 복사
+- 설교별 공유 주소
+- 제작 취지
+- QR 코드
+- 오탈자·내용 수정 제안
+- Harry’s Bible Notes 연결
+- 방문자 수 없음
 
-주의
-- 이 방식은 브라우저/기기 내장 speechSynthesis를 사용합니다.
-- iPhone/Safari는 화면 잠금이나 앱 전환 시 낭독이 멈출 수 있습니다.
-- 기기마다 한국어 음성의 자연스러움이 다릅니다.
+업로드 후 service-worker.js 캐시 버전을 한 단계 올리고 Commit 하십시오.
 
-업로드 후
-1) service-worker.js 캐시 버전을 한 단계 올리기
-2) Commit
-3) 사이트에서 Command + Shift + R
-4) 설교 하나 열기
-5) 제목/성경본문 아래 '설교 듣기' 박스 확인
-6) 083 또는 다른 긴 설교로 재생 테스트
+수정 제안·문의 이메일: harrysohny@aol.com
